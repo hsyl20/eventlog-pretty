@@ -24,6 +24,8 @@ extra-source-files: CHANGELOG.md
 executable eventlog-pretty
     main-is:          Main.hs
 
+    ghc-options: -Wall
+
     -- Modules included in this executable, other than Main.
     -- other-modules:
 
@@ -31,5 +33,7 @@ executable eventlog-pretty
     -- other-extensions:
     build-depends:      base ^>=4.16.3.0
                       , ghc-events
+                      , text
+                      , containers
     hs-source-dirs:   app
     default-language: Haskell2010
